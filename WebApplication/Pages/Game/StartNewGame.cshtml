@@ -1,0 +1,27 @@
+@page
+@model WebApplication.Pages.Game.StartNewGamePageModel
+
+<h1>Start a new game</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SaveFileName" class="control-label">Enter a name for saving the game! ex. John 22:09:19</label>
+                <input asp-for="SaveFileName" class="form-control" data-val-required="Save file name is required."/>
+                <span asp-validation-for="SaveFileName" class="text-danger">
+                    @((Model.NameTaken != null) ?  Model.NameTaken + " is already taken." : "")
+                </span>
+            </div>
+            <input asp-for="Difficulty" hidden/>
+            <div class="form-group">
+                <input type="submit" value="Start" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="../Index">Back to Main Menu</a>
+</div>
