@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">MineSweeper</h1>
+    <a asp-page="/Game/StartNewGame" asp-route-dif="1" class="btn btn-info">Beginner</a>
+    <a asp-page="/Game/StartNewGame" asp-route-dif="2" class="btn btn-info">Intermediate</a>
+    <a asp-page="/Game/StartNewGame" asp-route-dif="3" class="btn btn-info">Expert</a>
+    <a asp-page="/Game/StartGameCustom" class="btn btn-info">Custom</a>
+    <a asp-page="/Game/ContinueSavedGame" class="btn btn-info">Continue Game</a>
+</div>

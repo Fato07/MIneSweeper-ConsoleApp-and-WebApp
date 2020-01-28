@@ -1,0 +1,55 @@
+@page
+@model WebApplication.Pages.GameSave.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>GameSave</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="GameSave.GameSaveId" />
+            <div class="form-group">
+                <label asp-for="GameSave.SaveName" class="control-label"></label>
+                <input asp-for="GameSave.SaveName" class="form-control" />
+                <span asp-validation-for="GameSave.SaveName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GameSave.BoardHeight" class="control-label"></label>
+                <input asp-for="GameSave.BoardHeight" class="form-control" />
+                <span asp-validation-for="GameSave.BoardHeight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GameSave.BoardWidth" class="control-label"></label>
+                <input asp-for="GameSave.BoardWidth" class="form-control" />
+                <span asp-validation-for="GameSave.BoardWidth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GameSave.NumberOfMines" class="control-label"></label>
+                <input asp-for="GameSave.NumberOfMines" class="form-control" />
+                <span asp-validation-for="GameSave.NumberOfMines" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GameSave.BoardState" class="control-label"></label>
+                <input asp-for="GameSave.BoardState" class="form-control" />
+                <span asp-validation-for="GameSave.BoardState" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

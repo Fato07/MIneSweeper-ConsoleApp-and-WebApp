@@ -1,0 +1,11 @@
+/Users/fathindosunmu/OneDrive/Csharp/icd0008-2019f/MineSweeper/DAL/bin/Debug/netstandard2.1/DAL.deps.json
+/Users/fathindosunmu/OneDrive/Csharp/icd0008-2019f/MineSweeper/DAL/bin/Debug/netstandard2.1/DAL.dll
+/Users/fathindosunmu/OneDrive/Csharp/icd0008-2019f/MineSweeper/DAL/bin/Debug/netstandard2.1/DAL.pdb
+/Users/fathindosunmu/OneDrive/Csharp/icd0008-2019f/MineSweeper/DAL/bin/Debug/netstandard2.1/Domain.dll
+/Users/fathindosunmu/OneDrive/Csharp/icd0008-2019f/MineSweeper/DAL/bin/Debug/netstandard2.1/Domain.pdb
+/Users/fathindosunmu/OneDrive/Csharp/icd0008-2019f/MineSweeper/DAL/obj/Debug/netstandard2.1/DAL.csprojAssemblyReference.cache
+/Users/fathindosunmu/OneDrive/Csharp/icd0008-2019f/MineSweeper/DAL/obj/Debug/netstandard2.1/DAL.AssemblyInfoInputs.cache
+/Users/fathindosunmu/OneDrive/Csharp/icd0008-2019f/MineSweeper/DAL/obj/Debug/netstandard2.1/DAL.AssemblyInfo.cs
+/Users/fathindosunmu/OneDrive/Csharp/icd0008-2019f/MineSweeper/DAL/obj/Debug/netstandard2.1/DAL.csproj.CopyComplete
+/Users/fathindosunmu/OneDrive/Csharp/icd0008-2019f/MineSweeper/DAL/obj/Debug/netstandard2.1/DAL.dll
+/Users/fathindosunmu/OneDrive/Csharp/icd0008-2019f/MineSweeper/DAL/obj/Debug/netstandard2.1/DAL.pdb

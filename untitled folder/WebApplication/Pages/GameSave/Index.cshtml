@@ -1,0 +1,60 @@
+@page
+@model WebApplication.Pages.GameSave.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.GameSave[0].SaveName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GameSave[0].BoardHeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GameSave[0].BoardWidth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GameSave[0].NumberOfMines)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GameSave[0].BoardState)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.GameSave) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaveName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BoardHeight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BoardWidth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfMines)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BoardState)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.GameSaveId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.GameSaveId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.GameSaveId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
